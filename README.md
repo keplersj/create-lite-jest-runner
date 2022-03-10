@@ -14,7 +14,7 @@ Honestly, you shouldn't. `create-jest-runner` is an incredible package and provi
 
 `create-jest-runner` properly handles the lower level worker abstraction for the runners it creates. This package does not. Instead, this package creates runners that run tests inline, regardless if that is requested or not. This is a sacrifice being made because `jest-worker` does not yet support ESM files without some heavy quirks (as of March 10, 2022).
 
-***DO NOT***  create a runner with this package unless you are **absolutely** certain that this is a trade off you are willing to make.
+**_DO NOT_** create a runner with this package unless you are **absolutely** certain that this is a trade off you are willing to make.
 
 ## License
 
