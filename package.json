@@ -1,0 +1,115 @@
+{
+  "name": "create-lite-jest-runner",
+  "version": "0.0.0-development",
+  "description": "A lightweight Jest runner creator",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "build": "tsc",
+    "prepack": "npm run build",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keplersj/create-lite-jest-runner.git"
+  },
+  "keywords": [
+    "jest",
+    "jest-runner",
+    "esm"
+  ],
+  "author": "Kepler Sticka-Jones <kepler@stickajones.org>",
+  "funding": {
+    "type": "github-sponsors",
+    "url": "https://github.com/sponsors/keplersj"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keplersj/create-lite-jest-runner/issues"
+  },
+  "homepage": "https://github.com/keplersj/create-lite-jest-runner#readme",
+  "engines": {
+    "node": ">= 12"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.1",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@jest/test-result": "^27.5.1",
+    "@jest/types": "^27.5.1",
+    "@types/jest": "^27.4.1",
+    "eslint": "^8.10.0",
+    "eslint-config-starstuff": "^1.5.10",
+    "husky": "^7.0.4",
+    "jest-runner": "^27.5.1",
+    "jest-runner-eslint": "^1.0.0",
+    "jest-runner-prettier": "^1.0.0",
+    "prettier": "^2.5.1",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "p-limit": "^4.0.0"
+  },
+  "peerDependencies": {
+    "jest": ">= 27"
+  },
+  "eslintConfig": {
+    "extends": "starstuff/auto",
+    "env": {
+      "node": true
+    }
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "text"
+    ],
+    "projects": [
+      {
+        "preset": "ts-jest/presets/default-esm",
+        "globals": {
+          "ts-jest": {
+            "useESM": true
+          }
+        },
+        "moduleNameMapper": {
+          "^(\\.{1,2}/.*)\\.js$": "$1"
+        },
+        "collectCoverage": true,
+        "testPathIgnorePatterns": [
+          "/node_modules/",
+          "/dist/"
+        ],
+        "coverageReporters": [
+          "json",
+          "text"
+        ],
+        "displayName": "test"
+      },
+      {
+        "runner": "eslint",
+        "displayName": "lint:eslint",
+        "testMatch": [
+          "<rootDir>/src/**/*.ts"
+        ]
+      },
+      {
+        "preset": "jest-runner-prettier",
+        "displayName": "lint:prettier",
+        "testPathIgnorePatterns": [
+          "/node_modules/",
+          "/src/__fixtures__/",
+          "/coverage/",
+          "/dist/"
+        ]
+      }
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}

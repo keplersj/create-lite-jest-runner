@@ -1,0 +1,226 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create Lite Jest Runner exports as expected 1`] = `
+Object {
+  "default": [Function],
+}
+`;
+
+exports[`Create Lite Jest Runner runner class calls the onStart function and later onFailure function when the runner function rejects 1`] = `
+Object {
+  "calls": Array [
+    Array [
+      Object {
+        "context": Object {},
+        "testPath": "/test.js",
+      },
+    ],
+  ],
+  "instances": Array [
+    undefined,
+  ],
+  "invocationCallOrder": Array [
+    5,
+  ],
+  "lastCall": Array [
+    Object {
+      "context": Object {},
+      "testPath": "/test.js",
+    },
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": Promise {},
+    },
+  ],
+}
+`;
+
+exports[`Create Lite Jest Runner runner class calls the onStart function and later onFailure function when the runner function rejects 2`] = `
+Object {
+  "calls": Array [
+    Array [
+      Object {
+        "context": Object {},
+        "path": "/test.js",
+      },
+    ],
+  ],
+  "instances": Array [
+    undefined,
+  ],
+  "invocationCallOrder": Array [
+    4,
+  ],
+  "lastCall": Array [
+    Object {
+      "context": Object {},
+      "path": "/test.js",
+    },
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`Create Lite Jest Runner runner class calls the onStart function and later onFailure function when the runner function rejects 3`] = `
+Object {
+  "calls": Array [],
+  "instances": Array [],
+  "invocationCallOrder": Array [],
+  "results": Array [],
+}
+`;
+
+exports[`Create Lite Jest Runner runner class calls the onStart function and later onFailure function when the runner function rejects 4`] = `
+Object {
+  "calls": Array [
+    Array [
+      Object {
+        "context": Object {},
+        "path": "/test.js",
+      },
+      "Test Throw",
+    ],
+  ],
+  "instances": Array [
+    undefined,
+  ],
+  "invocationCallOrder": Array [
+    6,
+  ],
+  "lastCall": Array [
+    Object {
+      "context": Object {},
+      "path": "/test.js",
+    },
+    "Test Throw",
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`Create Lite Jest Runner runner class calls the onStart function and later onSuccess function when the runner function resolves 1`] = `
+Object {
+  "calls": Array [
+    Array [
+      Object {
+        "context": Object {},
+        "testPath": "/test.js",
+      },
+    ],
+  ],
+  "instances": Array [
+    undefined,
+  ],
+  "invocationCallOrder": Array [
+    2,
+  ],
+  "lastCall": Array [
+    Object {
+      "context": Object {},
+      "testPath": "/test.js",
+    },
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": Promise {},
+    },
+  ],
+}
+`;
+
+exports[`Create Lite Jest Runner runner class calls the onStart function and later onSuccess function when the runner function resolves 2`] = `
+Object {
+  "calls": Array [
+    Array [
+      Object {
+        "context": Object {},
+        "path": "/test.js",
+      },
+    ],
+  ],
+  "instances": Array [
+    undefined,
+  ],
+  "invocationCallOrder": Array [
+    1,
+  ],
+  "lastCall": Array [
+    Object {
+      "context": Object {},
+      "path": "/test.js",
+    },
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`Create Lite Jest Runner runner class calls the onStart function and later onSuccess function when the runner function resolves 3`] = `
+Object {
+  "calls": Array [
+    Array [
+      Object {
+        "context": Object {},
+        "path": "/test.js",
+      },
+      undefined,
+    ],
+  ],
+  "instances": Array [
+    undefined,
+  ],
+  "invocationCallOrder": Array [
+    3,
+  ],
+  "lastCall": Array [
+    Object {
+      "context": Object {},
+      "path": "/test.js",
+    },
+    undefined,
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`Create Lite Jest Runner runner class calls the onStart function and later onSuccess function when the runner function resolves 4`] = `
+Object {
+  "calls": Array [],
+  "instances": Array [],
+  "invocationCallOrder": Array [],
+  "results": Array [],
+}
+`;
+
+exports[`Create Lite Jest Runner runner creation function creates a valid runner class when executed 1`] = `[Function]`;
+
+exports[`Create Lite Jest Runner runner creation function creates a valid runner class when executed 2`] = `
+LiteTestRunner {
+  "_context": Object {},
+  "_globalConfig": Object {},
+}
+`;
+
+exports[`Create Lite Jest Runner runner creation function creates a valid runner class when executed 3`] = `[Function]`;
