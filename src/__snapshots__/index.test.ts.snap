@@ -3,6 +3,8 @@
 exports[`Create Lite Jest Runner exports as expected 1`] = `
 Object {
   "default": [Function],
+  "fail": [Function],
+  "pass": [Function],
 }
 `;
 

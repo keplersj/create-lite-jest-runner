@@ -47,3 +47,5 @@ export default (run: Runner) =>
       await Promise.all(promises);
     }
   };
+
+export { pass, fail } from "./results";

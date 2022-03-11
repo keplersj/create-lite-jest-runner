@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create Lite Jest Runner Result Creation Helpers Failing Test Helper creates a TestResult object 1`] = `
+Object {
+  "console": undefined,
+  "coverage": undefined,
+  "displayName": undefined,
+  "failureMessage": "This failed because you're a bad programmer.",
+  "leaks": false,
+  "memoryUsage": undefined,
+  "numFailingTests": 1,
+  "numPassingTests": 0,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "openHandles": Array [],
+  "perfStats": Object {
+    "end": 2000,
+    "runtime": 1000,
+    "slow": false,
+    "start": 1000,
+  },
+  "skipped": false,
+  "snapshot": Object {
+    "added": 0,
+    "fileDeleted": false,
+    "matched": 0,
+    "unchecked": 0,
+    "uncheckedKeys": Array [],
+    "unmatched": 0,
+    "updated": 0,
+  },
+  "testExecError": undefined,
+  "testFilePath": "/testPath",
+  "testResults": Array [],
+  "v8Coverage": undefined,
+}
+`;
+
+exports[`Create Lite Jest Runner Result Creation Helpers Passing Test Helper creates a TestResult object 1`] = `
+Object {
+  "console": undefined,
+  "coverage": undefined,
+  "displayName": undefined,
+  "failureMessage": undefined,
+  "leaks": false,
+  "memoryUsage": undefined,
+  "numFailingTests": 0,
+  "numPassingTests": 1,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "openHandles": Array [],
+  "perfStats": Object {
+    "end": 2000,
+    "runtime": 1000,
+    "slow": false,
+    "start": 1000,
+  },
+  "skipped": false,
+  "snapshot": Object {
+    "added": 0,
+    "fileDeleted": false,
+    "matched": 0,
+    "unchecked": 0,
+    "uncheckedKeys": Array [],
+    "unmatched": 0,
+    "updated": 0,
+  },
+  "testExecError": undefined,
+  "testFilePath": "/testPath",
+  "testResults": Array [],
+  "v8Coverage": undefined,
+}
+`;
