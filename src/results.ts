@@ -5,6 +5,7 @@ interface ResultAttributes {
   end: number;
   test: {
     path: string;
+    title?: string;
     errorMessage?: string;
   };
 }
@@ -68,7 +69,7 @@ export function pass(attributes: ResultAttributes): TestResult {
         fullName: "",
         numPassingAsserts: 1,
         status: "passed",
-        title: "",
+        title: attributes.test.title || "",
       },
     ],
   };
@@ -91,7 +92,7 @@ export function fail(attributes: ResultAttributes): TestResult {
         fullName: "",
         numPassingAsserts: 0,
         status: "failed",
-        title: "",
+        title: attributes.test.title || "",
       },
     ],
   };
