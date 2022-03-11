@@ -31,7 +31,19 @@ Object {
   },
   "testExecError": undefined,
   "testFilePath": "/testPath",
-  "testResults": Array [],
+  "testResults": Array [
+    Object {
+      "ancestorTitles": Array [],
+      "failureDetails": Array [],
+      "failureMessages": Array [
+        "This failed because you're a bad programmer.",
+      ],
+      "fullName": "",
+      "numPassingAsserts": 0,
+      "status": "failed",
+      "title": "",
+    },
+  ],
   "v8Coverage": undefined,
 }
 `;
@@ -67,7 +79,17 @@ Object {
   },
   "testExecError": undefined,
   "testFilePath": "/testPath",
-  "testResults": Array [],
+  "testResults": Array [
+    Object {
+      "ancestorTitles": Array [],
+      "failureDetails": Array [],
+      "failureMessages": Array [],
+      "fullName": "",
+      "numPassingAsserts": 1,
+      "status": "passed",
+      "title": "",
+    },
+  ],
   "v8Coverage": undefined,
 }
 `;

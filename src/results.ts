@@ -58,6 +58,19 @@ export function pass(attributes: ResultAttributes): TestResult {
     numPassingTests: 1,
     perfStats: createPerformanceStats(attributes.start, attributes.end),
     testFilePath: attributes.test.path,
+    testResults: [
+      {
+        ancestorTitles: [],
+        failureDetails: [],
+        failureMessages: attributes.test.errorMessage
+          ? [attributes.test.errorMessage]
+          : [],
+        fullName: "",
+        numPassingAsserts: 1,
+        status: "passed",
+        title: "",
+      },
+    ],
   };
 }
 
@@ -68,5 +81,18 @@ export function fail(attributes: ResultAttributes): TestResult {
     numFailingTests: 1,
     perfStats: createPerformanceStats(attributes.start, attributes.end),
     testFilePath: attributes.test.path,
+    testResults: [
+      {
+        ancestorTitles: [],
+        failureDetails: [],
+        failureMessages: attributes.test.errorMessage
+          ? [attributes.test.errorMessage]
+          : [],
+        fullName: "",
+        numPassingAsserts: 0,
+        status: "failed",
+        title: "",
+      },
+    ],
   };
 }
