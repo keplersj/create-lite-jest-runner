@@ -48,4 +48,4 @@ export default (run: Runner) =>
     }
   };
 
-export { pass, fail } from "./results";
+export { pass, fail } from "./results.js";
