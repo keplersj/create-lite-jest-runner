@@ -38,7 +38,7 @@
     "@jest/test-result": "27.5.1",
     "@jest/types": "27.5.1",
     "@types/jest": "27.4.1",
-    "eslint": "8.10.0",
+    "eslint": "8.11.0",
     "eslint-config-starstuff": "1.5.10",
     "husky": "7.0.4",
     "jest-runner": "27.5.1",
