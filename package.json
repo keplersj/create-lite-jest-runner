@@ -33,8 +33,8 @@
     "node": ">= 12"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.6.3",
-    "@commitlint/config-conventional": "17.6.3",
+    "@commitlint/cli": "17.6.5",
+    "@commitlint/config-conventional": "17.6.5",
     "@jest/test-result": "28.1.3",
     "@jest/types": "28.1.3",
     "@types/jest": "27.5.2",
