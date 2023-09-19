@@ -39,7 +39,7 @@
     "@jest/types": "29.6.3",
     "@types/jest": "27.5.2",
     "eslint": "8.49.0",
-    "eslint-config-starstuff": "1.5.39",
+    "eslint-config-starstuff": "1.5.40",
     "husky": "8.0.3",
     "jest-runner": "29.7.0",
     "jest-runner-eslint": "2.1.2",
