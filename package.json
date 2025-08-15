@@ -49,7 +49,7 @@
     "typescript": "4.9.5"
   },
   "dependencies": {
-    "p-limit": "^6.0.0"
+    "p-limit": "^7.0.0"
   },
   "peerDependencies": {
     "jest": ">= 27"
